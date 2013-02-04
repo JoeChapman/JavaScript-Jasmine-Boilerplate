@@ -1,21 +1,28 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-  "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <html>
 <head>
-  <title>Title</title>
+  <title>My test runner</title>
   <link rel="shortcut icon" type="image/png" href="../jasmine/jasmine_favicon.png" />
   <link rel="stylesheet" type="text/css" href="../jasmine/jasmine.css" />
   <script type="text/javascript" src="../jasmine/jasmine.js"></script>
   <script type="text/javascript" src="../jasmine/jasmine-html.js"></script>
+  
+  <!-- Test code -->
+  <script type="text/javascript" src="../spec/source.spec.js"></script>
+  
   <!-- Source -->
   <script type="text/javascript" src="../src/source.js"></script>
+  
 </head>
 
-<body>	  
+<body>	
+	<h1>My test runner</h1>
+	
 	<script type="text/javascript" src="jasmine-spec.js"></script>
 	<script type="text/javascript">
 		jasmine.getEnv().addReporter(new jasmine.TrivialReporter());
 		jasmine.getEnv().execute();
 	</script>
+	
 </body>
 </html>
